@@ -5,6 +5,8 @@ let userName = prompt('what is your name ?');
 //console.log(userName);
 alert('welcom ' + userName + ' we are happy to have you here :)');
 let score = '';
+
+
 // q1
 let qus1 = function () {
   let traveller = prompt(' Do you think I am traveling right now?');
@@ -17,7 +19,6 @@ let qus1 = function () {
   }
   // eslint-disable-next-line no-constant-condition
   else if (traveller == 'no' || 'n') {
-
     alert(' You are right');
     score++;
     //console.log(traveller);
@@ -141,9 +142,11 @@ let qus6 = function () {
 
     } else if (numericGuess < 27) {
       alert('  too low'); numericGuess = prompt(' Guess my age - it is betwwen 20 and 30 ?');
+    
     }
     else if (numericGuess == 27) {
-      alert('correct');
+      alert('correct, I am 27 years old');
+      
       score++;
       break;
     }
@@ -165,7 +168,9 @@ let qus7 = function () {
       if (rstQ == favRst[j]) {
         alert(' you guessed correctly');
         userAnswer = true;
-        //   score++;
+          score++;
+          alert('these are my favourite resturents  ' + favRst);
+
         break;
       }
 
@@ -186,4 +191,4 @@ qus7();
 
 confirm('you are above 18?');
 
-alert('Thank you ' + userName + ' Hope you have great time' + 'your score is ' + score);
+alert('Thank you ' + userName + ' Hope you have great time  ' + 'your score is ' + score);
